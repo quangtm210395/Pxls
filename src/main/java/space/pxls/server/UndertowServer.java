@@ -4,10 +4,12 @@ import com.google.gson.JsonObject;
 import io.undertow.Handlers;
 import io.undertow.Undertow;
 import io.undertow.server.handlers.AllowedMethodsHandler;
+import io.undertow.server.handlers.SetHeaderHandler;
 import io.undertow.server.handlers.form.EagerFormParsingHandler;
 import io.undertow.server.handlers.resource.ClassPathResourceManager;
 import io.undertow.server.handlers.resource.FileResourceManager;
 import io.undertow.util.Headers;
+import io.undertow.util.HttpString;
 import io.undertow.util.Methods;
 import io.undertow.websockets.core.AbstractReceiveListener;
 import io.undertow.websockets.core.BufferedTextMessage;
@@ -110,7 +112,17 @@ public class UndertowServer {
                 .addHttpListener(port, "0.0.0.0")
                 .setIoThreads(32)
                 .setWorkerThreads(128)
-                .setHandler(new IPReader(new AuthReader(new EagerFormParsingHandler().setNext(routingHandler)))).build();
+                .setHandler(
+                        new IPReader(
+                            new SetHeaderHandler(
+                                new AuthReader(
+                                        new EagerFormParsingHandler().setNext(routingHandler)
+                                ),
+                                "X-Frame-Options",
+                                "ALLOW-FROM " + "localhost"
+                            )
+                        )
+                ).build();
         server.start();
     }
 
