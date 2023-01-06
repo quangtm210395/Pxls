@@ -1111,27 +1111,27 @@ msgstr "FAQ"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Why is the cooldown as long as it is?"
-msgstr "Why is the cooldown as long as it is?"
+msgstr "How can I join the game?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "The time it takes to get a pixel is dynamic, and changes based on how many people are online. The cooldown time is longer when more users are online."
-msgstr "The time it takes to get a pixel is dynamic, and changes based on how many people are online. The cooldown time is longer when more users are online."
+msgstr "In the early stages, we prioritized opening the canvas to the active members of the organizations involved in supporting the game for a period of 3 days. This is just a little tribute to what they contributed to the event. Then we will make the whole thing public and you just need to log in to Discord to participate. However, you can join early by doing the tasks that we give you in the meantime. These milestones will be announced by us on our Twitter"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Why does it say 0/6 pixels?"
-msgstr "Why does it say 0/6 pixels?"
+msgstr "What is the max stack? What is the cooldown of the stacks?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "This means that you are waiting for your next pixel. When you place a pixel, there is a cooldown for when you can place the next one. Over time, you can gain up to 6 \"stacked\" pixels to place at once."
-msgstr "This means that you are waiting for your next pixel. When you place a pixel, there is a cooldown for when you can place the next one. Over time, you can gain up to 6 \"stacked\" pixels to place at once."
+msgstr "Currently we set the max stack to 10, and the cooldown between stacks will vary and increase based on the number of stacks you have accumulated. Specifically, when you want to accumulate 10 stacks of pixels, it will take you nearly 1 hour. But when you place consecutive pixel tiles, it will only take you 15s to wait for 1 stack. For example, if you put all the pixels you have consecutively, it only takes 1 minute to place 4 stacks but if you don't place it right away, it will take you 6 minutes to accumulate 4 stacks."
 
 #: resources/public/pebble_templates/faq.html
 msgid "Why does it take so long to \"stack\" pixels?"
-msgstr "Why does it take so long to \"stack\" pixels?"
+msgstr "Why does the cooldown take so long?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "This is by design. It is better to place a pixel as soon as you get one. Pixel \"stacking\" is meant to give you a bump if you go AFK for a bit. It takes around 40 minutes to get a full 6/6 pixels, but it only takes around 3 minutes to place 6 pixels if you place them as soon as possible."
-msgstr "This is by design. It is better to place a pixel as soon as you get one. Pixel \"stacking\" is meant to give you a bump if you go AFK for a bit. It takes around 40 minutes to get a full 6/6 pixels, but it only takes around 3 minutes to place 6 pixels if you place them as soon as possible."
+msgstr "In order to ensure the fairness of the game, we want to put the interests of those who accept to spend their time and contribute with us first."
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I appeal a ban?"
@@ -1139,51 +1139,51 @@ msgstr "How do I appeal a ban?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Contact us on <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord</a> or send an appeal to our <a href=\"https://pxls.space/appeal\" target=\"_blank\">Google form</a> after reading the rules in the site's info panel."
-msgstr "Contact us on <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord</a> or send an appeal to our <a href=\"https://pxls.space/appeal\" target=\"_blank\">Google form</a> after reading the rules in the site's info panel."
+msgstr "Contact us on <a href=\"https://discord.gg/FX7u9FHSPc\" target=\"_blank\">Discord</a> after reading the rules in the site's info panel."
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I make a template?"
-msgstr "How do I make a template?"
+msgstr "What is my reward? How is my performance measured?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "A template is an image link that is posted in the template textbox in the settings panel so you can place over it on the canvas. You may use a regular image link to your pixel art, but many people use 3rd party tools like <a href=\"https://charity.pxls.space\" target=\"_blank\">Charity</a> or <a href=\"https://discord.gg/5MVDCq53vC\" target=\"blank\">Clueless</a> to turn pixel art into a fancier link. If you need to make pixel art yourself, you can use <a href=\"https://www.piskelapp.com/p/create\" target=\"_blank\">Piskel</a> to create art to put into Charity or Clueless."
-msgstr "A template is an image link that is posted in the template textbox in the settings panel so you can place over it on the canvas. You may use a regular image link to your pixel art, but many people use 3rd party tools like <a href=\"https://charity.pxls.space\" target=\"_blank\">Charity</a> or <a href=\"https://discord.gg/5MVDCq53vC\" target=\"blank\">Clueless</a> to turn pixel art into a fancier link. If you need to make pixel art yourself, you can use <a href=\"https://www.piskelapp.com/p/create\" target=\"_blank\">Piskel</a> to create art to put into Charity or Clueless."
+msgstr "Your personal achievement will be measured by the number of valid pixels you have drawn. Based on the number of pixels drawn, we will reward the most active players with valuable gifts from our sponsors and partners. Look forward to it, what we bring will be surprises!"
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I move a template?"
-msgstr "How do I move a template?"
+msgstr "Can I see past canvases?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Hold <kbd>CTRL</kbd> (or <kbd>OPTION</kbd> on macOS) and click and drag to move it around. On mobile, you can tap and hold where you want to move the template and click \"Move Template Here\" in the pop-up."
-msgstr "Hold <kbd>CTRL</kbd> (or <kbd>OPTION</kbd> on macOS) and click and drag to move it around. On mobile, you can tap and hold where you want to move the template and click \"Move Template Here\" in the pop-up."
+msgstr "The status of the Canvas versions will be updated by us 3 times a day at 0:00, 8:00, 16:00 UTC every day on Suipiens' twitter. You can follow and check there"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Does the canvas reset? When?"
-msgstr "Does the canvas reset? When?"
+msgstr "How do I get pixel information"
 
 #: resources/public/pebble_templates/faq.html
 msgid "Yes. The canvas resets when it is completely full. A reset date is not usually decided until the canvas is full, but the average canvas life-span is around 1 month. Updates are posted in our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a> when a reset date is set."
-msgstr "Yes. The canvas resets when it is completely full. A reset date is not usually decided until the canvas is full, but the average canvas life-span is around 1 month. Updates are posted in our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a> when a reset date is set."
+msgstr "Shift + Clicking, will show the status of the last person who drew it, and the information of that player, and you can also report there."
 
 #: resources/public/pebble_templates/faq.html
 msgid "Where can I see the past canvases?"
-msgstr "Where can I see the past canvases?"
+msgstr "How can I get more information and contact you guys for support?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "The past canvases are featured on our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>, or the 3rd party website <a href=\"https://pxlsfiddle.com\" target=\"_blank\">PxlsFiddle</a>, which records timelapses and a lot of useful information on each canvas."
-msgstr "The past canvases are featured on our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>, or the 3rd party website <a href=\"https://pxlsfiddle.com\" target=\"_blank\">PxlsFiddle</a>, which records timelapses and a lot of useful information on each canvas."
+msgstr "Please create a ticket at  <a href=\"https://discord.gg/FX7u9FHSPc\" target=\"_blank\">Discord server</a>, Our team will support you 24/7 so you can get help in time and enjoy the game"
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I see who placed a pixel?"
-msgstr "How do I see who placed a pixel?"
+msgstr "How long will the event take? And how to determine the winning organization?"
 
 #: resources/public/pebble_templates/faq.html
 msgid "By shift-clicking (or tap and hold on mobile) a pixel, you can see who placed a pixel, how many pixels they have placed, and when they placed it."
-msgstr "By shift-clicking (or tap and hold on mobile) a pixel, you can see who placed a pixel, how many pixels they have placed, and when they placed it."
+msgstr "The event will last for 2 weeks. After closing the canvas, we will calculate the result. The result is based on 50% of the voting results, 50% is the number of pixels that the organization successfully draws."
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I report someone?"
-msgstr "How do I report someone?"
+msgstr "How do I report someone? "
 
 #: resources/public/pebble_templates/faq.html
 msgid "Shift-click (or tap and hold on mobile) on a pixel, and click the Report button."
@@ -1191,35 +1191,35 @@ msgstr "Shift-click (or tap and hold on mobile) on a pixel, and click the Report
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I change the color of my name in the chat?"
-msgstr "How do I change the color of my name in the chat?"
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "There is a \"Username Color\" option near the bottom of the settings panel."
-msgstr "There is a \"Username Color\" option near the bottom of the settings panel."
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "What is a \"virginmap\"?"
-msgstr "What is a \"virginmap\"?"
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "The virginmap shows which pixels have not yet been placed on (or “virgin” pixels)."
-msgstr "The virginmap shows which pixels have not yet been placed on (or “virgin” pixels)."
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I report bugs?"
-msgstr "How do I report bugs?"
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "Submit bugs to the #dev-and-bugs channel in the <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>. If you have found an exploit, please message one of the staff members privately (through DMs)."
-msgstr "Submit bugs to the #dev-and-bugs channel in the <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>. If you have found an exploit, please message one of the staff members privately (through DMs)."
+msgstr " "
 
 #: resources/public/pebble_templates/faq.html
 msgid "How do I get more info or contact staff?"
-msgstr "How do I get more info or contact staff?"
+msgstr "How do I get more info or contact staff? "
 
 #: resources/public/pebble_templates/faq.html
 msgid "Check the info panel (the icon on the top left) for more details and links, or join our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>, where a staff member will gladly respond."
-msgstr "Check the info panel (the icon on the top left) for more details and links, or join our <a href=\"https://pxls.space/discord\" target=\"_blank\">Discord server</a>, where a staff member will gladly respond."
+msgstr "Check the info panel (the icon on the top left) for more details and links, or join our <a href=\"https://discord.gg/FX7u9FHSPc\" target=\"_blank\">Discord server</a>, where a staff member will gladly respond."
 
 #: resources/public/pebble_templates/info.html
 msgid "Welcome!"
@@ -1227,27 +1227,27 @@ msgstr "Welcome!"
 
 #: resources/public/pebble_templates/info.html
 msgid "Welcome to pxls.space! Pxls is a multiplayer online collaborative canvas that allows you to create anything you can imagine, one pixel at a time. Join hundreds of other players in the Pxls community and create amazing works of art together as a team, or solo."
-msgstr "Welcome to pxls.space! Pxls is a multiplayer online collaborative canvas that allows you to create anything you can imagine, one pixel at a time. Join hundreds of other players in the Pxls community and create amazing works of art together as a team, or solo."
+msgstr "Welcome to SuiPixels War! SuiPixels War is a 1000 x 1000 pixel canvas that allows so many players to come together and join hands to create, create (or destroy) anything you can imagine, 1 pixel at a time. The game is inspired by Reddit's R/place, a tribute to the Reddit community for demonstrating to us the extraordinary power of solidarity, working together for a purpose."
 
 #: resources/public/pebble_templates/info.html
 msgid "The best place to reach staff and fellow community is in the discord!"
-msgstr "The best place to reach staff and fellow community is in the discord!"
+msgstr "We - Suipiens team organized this game, hope that you can check and join our social media pages, follow us to support and receive the latest news from us I. We really appreciate your cooperation and contribution."
 
 #: resources/public/pebble_templates/info.html
 msgid "Check out our social media pages, and please take the time to read the rules below. Have fun creating (or changing) art!"
-msgstr "Check out our social media pages, and please take the time to read the rules below. Have fun creating (or changing) art!"
+msgstr "For a healthy and civilized communal experience, please take the time to read the rules below. Draw with all your love and creativity!"
 
 #: resources/public/pebble_templates/info.html
 msgid "Canvas Rules"
-msgstr "Canvas Rules"
+msgstr "SuiPixels War Rules"
 
 #: resources/public/pebble_templates/info.html
 msgid "We pride ourselves on trying to keep an open canvas for all free from outside interference on our end, and especially censorship. However, for the good of the community and on accounts of our own beliefs, please acknowledge and obey the following guidelines:"
-msgstr "We pride ourselves on trying to keep an open canvas for all free from outside interference on our end, and especially censorship. However, for the good of the community and on accounts of our own beliefs, please acknowledge and obey the following guidelines:"
+msgstr "We try to keep everyone free from outside interference so everyone can have the best experience in our game. However, for the benefit of the community and our own beliefs, we ask that you agree to the following principles:"
 
 #: resources/public/pebble_templates/info.html
 msgid "No hateful imagery or derogatory speech. This includes but is not limited to words such as <i>faggot</i>, <i>nigger</i>, etc; as well as the Swastika, Hammer and Sickle, and any symbols of terrorism."
-msgstr "No hateful imagery or derogatory speech. This includes but is not limited to words such as <i>faggot</i>, <i>nigger</i>, etc; as well as the Swastika, Hammer and Sickle, and any symbols of terrorism."
+msgstr "No hateful images or offensive words. This includes but is not limited to words like fagot, nigger, etc.; as well as the swastika, Hammer and Sickle, and any symbols of terrorism."
 
 #: resources/public/pebble_templates/info.html
 msgid "No NSFW or NSFL content."
@@ -1267,11 +1267,11 @@ msgstr "No sexual imagery/erotica"
 
 #: resources/public/pebble_templates/info.html
 msgid "No excessive blood or otherwise obscene/shocking content"
-msgstr "No excessive blood or otherwise obscene/shocking content"
+msgstr "There is not too much blood or obscene, offensive content to viewers"
 
 #: resources/public/pebble_templates/info.html
 msgid "No more than <b>one</b> account per user, no exceptions. Multiple account users will be banned from creating art on the canvas."
-msgstr "No more than <b>one</b> account per user, no exceptions. Multiple account users will be banned from creating art on the canvas."
+msgstr "No more than <b>one</b> account per user, no exceptions. Multiple account users will be banned from creating art on the canvas. "
 
 #: resources/public/pebble_templates/info.html
 msgid "No auto-placement tools of any kind, you must place the pixels manually."
@@ -1279,23 +1279,23 @@ msgstr "No auto-placement tools of any kind, you must place the pixels manually.
 
 #: resources/public/pebble_templates/info.html
 msgid "Do not abuse site functionality, such as reports or lookups. (e.g. automated reporting/lookups, etc.)"
-msgstr "Do not abuse site functionality, such as reports or lookups. (e.g. automated reporting/lookups, etc.)"
+msgstr "Do not abuse site functionality, such as reports "
 
 #: resources/public/pebble_templates/info.html
 msgid "Any automated aggregation of data from user lookups is not allowed, and will result in a ban."
-msgstr "Any automated aggregation of data from user lookups is not allowed, and will result in a ban."
+msgstr "Any automated aggregation of data from user lookups is not allowed "
 
 #: resources/public/pebble_templates/info.html
 msgid "Staff have final say in any rule disputes"
-msgstr "Staff have final say in any rule disputes"
+msgstr "Respect everyone"
 
 #: resources/public/pebble_templates/info.html
 msgid "If you feel a moderator has acted inappropriately, please report it to an administrator."
-msgstr "If you feel a moderator has acted inappropriately, please report it to an administrator."
+msgstr "The moderators have the final say in any rules agreement. If you feel a moderator has acted inappropriately, please report it to the administrator."
 
 #: resources/public/pebble_templates/info.html
 msgid "If you believe you have been falsely banned you may contact a moderator or administrator."
-msgstr "If you believe you have been falsely banned you may contact a moderator or administrator."
+msgstr "If you believe you have been improperly banned, you can contact the moderator or administrator."
 
 #: resources/public/pebble_templates/info.html
 msgid "Chat Rules"
@@ -1303,39 +1303,39 @@ msgstr "Chat Rules"
 
 #: resources/public/pebble_templates/info.html
 msgid "Keep chat civil. No harassment or homophobic/transphobic/disablist language."
-msgstr "Keep chat civil. No harassment or homophobic/transphobic/disablist language."
+msgstr "Keep civil conversation. No harassing or homophobic/transgender/disabling language. Casual swearing/etc is allowed"
 
 #: resources/public/pebble_templates/info.html
 msgid "No hate speech. This includes emoji/symbols/ASCII art."
-msgstr "No hate speech. This includes emoji/symbols/ASCII art."
+msgstr "No hate speech."
 
 #: resources/public/pebble_templates/info.html
 msgid "Normal swearing/etc is allowed"
-msgstr "Normal swearing/etc is allowed"
+msgstr "Do not spam (include excessive ASCII art/emoticons/symbols)"
 
 #: resources/public/pebble_templates/info.html
 msgid "No spamming"
-msgstr "No spamming"
+msgstr "No links to sites that actively violate chat or canvas rules (e.g. porn sites)"
 
 #: resources/public/pebble_templates/info.html
 msgid "This includes excessive ASCII art/emojis/symbols/whitespace"
-msgstr "This includes excessive ASCII art/emojis/symbols/whitespace"
+msgstr "No symbology that breaks canvas or chat rules (e.g. NSFW ASCII art)"
 
 #: resources/public/pebble_templates/info.html
 msgid "No \"copy pasta\"s"
-msgstr "No \"copy pasta\"s"
+msgstr "No personal information"
 
 #: resources/public/pebble_templates/info.html
 msgid "No links to sites that actively break the canvas or chat rules (e.g. porn sites)"
-msgstr "No links to sites that actively break the canvas or chat rules (e.g. porn sites)"
+msgstr "Moderators have the final say in any rules dispute"
 
 #: resources/public/pebble_templates/info.html
 msgid "No symbology which break the canvas or chat rules (e.g. NSFW ASCII art)"
-msgstr "No symbology which break the canvas or chat rules (e.g. NSFW ASCII art)"
+msgstr "If you feel a moderator has acted inappropriately, please report it to the administrator."
 
 #: resources/public/pebble_templates/info.html
 msgid "No personal information"
-msgstr "No personal information"
+msgstr " "
 
 #: resources/public/pebble_templates/info.html
 msgid "Links"
@@ -1392,11 +1392,11 @@ msgstr "PxlsFiddle (archives)"
 
 #: resources/public/pebble_templates/info.html
 msgid "Donate"
-msgstr "Donate"
+msgstr "Partners"
 
 #: resources/public/pebble_templates/info.html
 msgid "Donations are not accepted at this time, but this panel will be updated when they're open again!"
-msgstr "Donations are not accepted at this time, but this panel will be updated when they're open again!"
+msgstr "We would like to express our deep gratitude to our partners who have supported and sponsored us in organizing the event to run smoothly. Acknowledgments go to:"
 
 #. eg "Alice's profile". Double singlequote is a java thing - needed if a replacement (such as this) contains a singlequote.
 #: resources/public/pebble_templates/profile.html
@@ -2452,4 +2452,4 @@ msgstr "Mod Actions"
 
 #: resources/public/admin/admin.js
 msgid "More..."
-msgstr ""
+msgstr " "

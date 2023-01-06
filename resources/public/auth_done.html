@@ -20,10 +20,11 @@
                 window.close();
             }
         } else {
-            localStorage.setItem('auth_respond', JSON.stringify({
+            const d = JSON.stringify({
                 signup: queryParams["signup"] === "true",
                 token: queryParams["token"]
-            }));
+            });
+            localStorage.setItem('auth_respond', d);
             if (localStorage.getItem('auth_same_window') != null) {
                 localStorage.removeItem('auth_same_window');
                 localStorage.setItem('auth_proceed', 'true');

@@ -42,6 +42,7 @@ public class Database {
         }
 
         HikariConfig config = new HikariConfig();
+        System.out.println("db url: " + App.getConfig().getString("database.url"));
         config.setJdbcUrl(App.getConfig().getString("database.url"));
         config.setUsername(App.getConfig().getString("database.user"));
         config.setPassword(App.getConfig().getString("database.pass"));
@@ -49,7 +50,7 @@ public class Database {
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
         config.addDataSourceProperty("allowMultiQueries", "true");
-        config.setMaximumPoolSize(200); // this is plenty, the websocket uses 32
+        config.setMaximumPoolSize(50); // this is plenty, the websocket uses 32
         //config.setConnectionInitSql("SET NAMES UTF-8"); //needed for emoji's in chat
 
         jdbi = Jdbi.create(new HikariDataSource(config));

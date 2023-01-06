@@ -3594,7 +3594,7 @@
       }
     },
     "gulp-eslint": {
-      "version": "git+ssh://git@github.com/pxlsspace/gulp-eslint.git#f145e3f3e4829f57dc3737e09784cf16fe19d3dd",
+      "version": "git+https://github.com/pxlsspace/gulp-eslint.git#f145e3f3e4829f57dc3737e09784cf16fe19d3dd",
       "from": "gulp-eslint@https://github.com/pxlsspace/gulp-eslint.git",
       "requires": {
         "eslint": "^7.15.0",
@@ -3632,7 +3632,7 @@
       }
     },
     "gulp-minify": {
-      "version": "git+ssh://git@github.com/pxlsspace/gulp-minify.git#7920914fece33b85abd69817ee705ab1cd19d0fd",
+      "version": "git+https://github.com/pxlsspace/gulp-minify.git#7920914fece33b85abd69817ee705ab1cd19d0fd",
       "from": "gulp-minify@https://github.com/pxlsspace/gulp-minify.git",
       "requires": {
         "ansi-colors": "^1.0.1",

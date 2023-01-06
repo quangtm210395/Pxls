@@ -14,6 +14,7 @@ import io.undertow.server.handlers.form.FormDataParser;
 import io.undertow.util.*;
 import space.pxls.App;
 import space.pxls.auth.*;
+import space.pxls.auth.discord.DiscordGuild;
 import space.pxls.data.*;
 import space.pxls.server.packets.http.Error;
 import space.pxls.server.packets.http.*;
@@ -1772,6 +1773,16 @@ public class WebHandler {
             }
 
             if (identifier != null) {
+                if (id.equalsIgnoreCase("discord")) {
+                    if (!DiscordAuthService.getGuilds(token)) {
+                        var res = new HashMap<String, Object>();
+                        res.put("error", "invalid_guild");
+                        res.put("message", "You must have one of the required roles in the following discord !");
+                        res.put("servers", DiscordGuild.canonicalGuilds.values());
+                        respond(exchange, StatusCodes.BAD_REQUEST, res);
+                        return;
+                    }
+                }
                 User user = App.getUserManager().getByLogin(id, identifier);
                 // If there is no user with that identifier, we make a signup token and tell the client to sign up with that token
                 if (user == null) {

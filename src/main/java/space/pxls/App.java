@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xnio.XnioWorker;
+import space.pxls.auth.discord.DiscordGuild;
+import space.pxls.auth.discord.DiscordRole;
 import space.pxls.data.DBChatMessage;
 import space.pxls.data.DBPixelPlacementFull;
 import space.pxls.data.DBRollbackPixel;
@@ -64,6 +66,8 @@ public class App {
 
         loadConfig();
         loadPalette();
+        // load discord guilds
+        loadGuilds();
 
         JCS.setLogSystem(org.apache.commons.jcs3.log.LogManager.LOGSYSTEM_LOG4J2);
 
@@ -864,6 +868,34 @@ public class App {
             }
         }
     }
+
+    public static void loadGuilds() {
+        // NOTE: This differs from the way pxls.conf is handled, as we don't merge the guilds-reference.conf
+        // file into guilds.conf, but use it as a default in case guilds.conf doesn't exist or is invalid.
+        var guildConfigFile = new File("guilds.conf");
+        var guildConfig = ConfigFactory.parseFile(guildConfigFile.exists() ? guildConfigFile : new File("resources/guilds-reference.conf"));
+
+        for (var id: guildConfig.root().keySet()) {
+            var name = guildConfig.getString(id + ".name");
+//            List<String> roles = Util.defaultConfigVal(() -> guildConfig.getStringList(id + ".roles"), Collections.emptyList());
+            ArrayList<DiscordRole> roles = new ArrayList<>();
+            try {
+                ConfigList roleList = guildConfig.getList(id + ".roles");
+                for (var value: roleList) {
+                    HashMap<String, String> roleHashMap = (HashMap<String, String>) value.unwrapped();
+                    String roleId = roleHashMap.get("id");
+                    String roleName = roleHashMap.get("name");
+                    roles.add(new DiscordRole(roleId, roleName));
+                }
+            } catch (Exception e) {
+                System.out.println("There are no roles for this guild: " + name);
+                // If there're no roles for this guild
+            }
+            var guild = new DiscordGuild(id, name, roles);
+            DiscordGuild.makeCanonical(guild);
+        }
+    }
+
     private static void loadRoles() {
         // NOTE: This differs from the way pxls.conf is handled, as we don't merge the roles-reference.conf
         // file into roles.conf, but use it as a default in case roles.conf doesn't exist or is invalid.
@@ -1151,7 +1183,7 @@ public class App {
     }
 
     private static boolean loadDefaultMap() {
-        Path path = getStorageDir().resolve("default_board.dat").toAbsolutePath();
+        Path path = getStorageDir().resolve("maps/default_board.dat").toAbsolutePath();
         if (!Files.exists(path)) {
             defaultBoard = null;
             return false;
@@ -1172,7 +1204,7 @@ public class App {
     }
 
     private static boolean loadMap() {
-        Path path = getStorageDir().resolve("board.dat");
+        Path path = getStorageDir().resolve("maps/board.dat");
         if (!Files.exists(path)) {
             getLogger().warn("Cannot find board.dat in working directory, using blank board");
             for (int x = 0; x < width; x++) {
@@ -1198,7 +1230,7 @@ public class App {
     }
 
     private static boolean loadHeatmap() {
-        Path path = getStorageDir().resolve("heatmap.dat");
+        Path path = getStorageDir().resolve("maps/heatmap.dat");
         if (!Files.exists(path)) {
             getLogger().warn("Cannot find heatmap.dat in working directory, using heatmap");
             saveHeatmapToDir(path);
@@ -1219,7 +1251,7 @@ public class App {
     }
 
     private static boolean loadPlacemap() {
-        Path path = getStorageDir().resolve("placemap.dat");
+        Path path = getStorageDir().resolve("maps/placemap.dat");
         if (!Files.exists(path)) {
             getLogger().warn("Cannot find placemap.dat in working directory, assuming transparent pixels are unplaceable");
             return false;
@@ -1239,7 +1271,7 @@ public class App {
     }
 
     private static boolean loadVirginmap() {
-        Path path = getStorageDir().resolve("virginmap.dat");
+        Path path = getStorageDir().resolve("maps/virginmap.dat");
         if (!Files.exists(path)) {
             getLogger().warn("Cannot find virginmap.dat in working directory, using blank virginmap");
 
@@ -1305,9 +1337,9 @@ public class App {
     }
 
     private static void saveMapForce() {
-        saveMapToDir(getStorageDir().resolve("board.dat"));
-        saveHeatmapToDir(getStorageDir().resolve("heatmap.dat"));
-        saveVirginmapToDir(getStorageDir().resolve("virginmap.dat"));
+        saveMapToDir(getStorageDir().resolve("maps/board.dat"));
+        saveHeatmapToDir(getStorageDir().resolve("maps/heatmap.dat"));
+        saveVirginmapToDir(getStorageDir().resolve("maps/virginmap.dat"));
     }
 
     private static void saveMapBackup() {
