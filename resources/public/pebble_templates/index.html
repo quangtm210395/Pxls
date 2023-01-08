@@ -109,81 +109,259 @@
                     <span id="cooldown-timer"></span>
                 </div>
             </div>
-            <div id="sponsor-bubble" class="bubble" position="bottom right" style="gap: 1rem; display:flex; bottom: 1rem; left: 50%; transform: translate(-50%, 0); padding-top: 1em;">
-                <a href="https://twitter.com/Babyapessociety" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/BabyApesSociety.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+            <style>
+                .sponsor-bubble {
+                    height: 95px;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    padding-top: 1em;
+                    bottom: 1rem;
+                    max-width: 800px;
+                    overflow: hidden;
+                    width: 100%;
+                }
+
+                .sponsor-bubble__content {
+                    gap: 1rem;
+                    display: flex !important;
+                    width: 2790px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    animation: moveSlideShow 15s linear infinite;
+                }
+
+                .sponsor-bubble__content__a {
+                    display: flex;
+                    align-items: center;
+                }
+
+                @keyframes moveSlideShow {
+                    100% {
+                        transform: translateX(-66.66666%);
+                    }
+                }
+            </style>
+            <div id="sponsor-bubble" class="bubble sponsor-bubble" position="bottom right">
+                <div class="sponsor-bubble__content">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Babyapessociety" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/BabyApesSociety.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             Baby Apes
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/NFT_Kinoko" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/Kinoko.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/NFT_Kinoko" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/Kinoko.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             Kinoko
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/SUIDinosNFT" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/SuiDinos.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SUIDinosNFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDinos.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             SuiDinos
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/DuckiesNFTsui/photo" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/SuiDuckies.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/DuckiesNFTsui/photo" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDuckies.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             SuiDuckies
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/SuiDuckz" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/SuiDuckz.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiDuckz" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDuckz.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             SuiDuckz
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/Suiheroes_io" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/SuiHeroes.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Suiheroes_io" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiHeroes.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             SuiHeroes
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/SuiWhale" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/SuiWhale.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiWhale" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiWhale.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             Sui Whale
                         </span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/YLabs_io" target="_blank">
-                    <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
-                        <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                             src="https://cdn.suipiens.com/public/images/YLabs.png"/>
-                        <span style="font-size: 14px; text-align: center;">
+                        </div>
+                    </a>
+
+
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/YLabs_io" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/CleoSui.png"/>
+                            <span style="font-size: 14px; text-align: center;">
                             YLabs
                         </span>
-                    </div>
-                </a>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/sui_cleo" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/YLabs.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            CleoSu
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiGoats" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/GOATs of Sui.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            GOATsOfSui
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiarNFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SUIARNFT.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SUIARNFT
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SugarKingdomNFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SugarKingdom.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SugarKi...
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/galactic_apes" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiGalatacApes.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiGalat...
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiMaxNFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiMax.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiMax
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiNSdapp" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiNS.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiNS
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/OKGuardians_NFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/TheGuardiansNFT.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            TheGuardia...
+                        </span>
+                        </div>
+                    </a>
+
+
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Babyapessociety" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/BabyApesSociety.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            Baby Apes
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/NFT_Kinoko" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/Kinoko.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            Kinoko
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SUIDinosNFT" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDinos.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiDinos
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/DuckiesNFTsui/photo" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDuckies.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiDuckies
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiDuckz" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiDuckz.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiDuckz
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Suiheroes_io" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiHeroes.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            SuiHeroes
+                        </span>
+                        </div>
+                    </a>
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiWhale" target="_blank">
+                        <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
+                            <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
+                                 src="https://cdn.suipiens.com/public/images/SuiWhale.png"/>
+                            <span style="font-size: 14px; text-align: center;">
+                            Sui Whale
+                        </span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
+
 
         <div id="ui-bottom">
             <button type="button" id="undo"><span>{{i18n('Localization', 'Undo') | raw}}</span></button>
