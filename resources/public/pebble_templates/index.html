@@ -111,6 +111,7 @@
             </div>
             <style>
                 .sponsor-bubble {
+                    display: flex !important;
                     height: 95px;
                     position: relative;
                     left: 50%;
@@ -125,8 +126,8 @@
                 .sponsor-bubble__content {
                     gap: 1rem;
                     display: flex !important;
-                    width: 4700px;
-                    position: absolute;
+                    /*width: 4700px;*/
+                    /*position: absolute;*/
                     top: 0;
                     left: 0;
                     height: 100%;
@@ -139,13 +140,16 @@
                 }
 
                 @keyframes moveSlideShow {
+                    0% {
+                        transform: translateX(0%);
+                    }
                     100% {
-                        transform: translateX(-66.66666%);
+                        transform: translateX(-100%);
                     }
                 }
             </style>
             <div id="sponsor-bubble" class="bubble sponsor-bubble" position="bottom right">
-                <div class="sponsor-bubble__content">
+                <div id="clone" class="sponsor-bubble__content">
                     <a class="sponsor-bubble__content__a" href="https://twitter.com/Babyapessociety" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
@@ -391,74 +395,83 @@
                         </span>
                         </div>
                     </a>
-
-
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Babyapessociety" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/BabyApesSociety.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            Baby Apes
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/NFT_Kinoko" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/Kinoko.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            Kinoko
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SUIDinosNFT" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/SuiDinos.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            SuiDinos
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/DuckiesNFTsui/photo" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/SuiDuckies.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            SuiDuckies
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiDuckz" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/SuiDuckz.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            SuiDuckz
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/Suiheroes_io" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/SuiHeroes.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            SuiHeroes
+                            TheNextL...
                         </span>
                         </div>
                     </a>
-                    <a class="sponsor-bubble__content__a" href="https://twitter.com/SuiWhale" target="_blank">
+                    <a class="sponsor-bubble__content__a" href="https://twitter.com/thelightonsui" target="_blank">
                         <div style="display:flex; flex-direction: column; width: 100px; align-items: center">
                             <img style="width: 66px; border-radius: 50%; margin-bottom: 5px"
-                                 src="https://cdn.suipiens.com/public/images/SuiWhale.png"/>
+                                 src="https://cdn.suipiens.com/public/images/TheNextLight.png"/>
                             <span style="font-size: 14px; text-align: center;">
-                            Sui Whale
+                            TheNextL...
                         </span>
                         </div>
                     </a>
                 </div>
 
+
             </div>
+            <script>
+                $(document).ready(function() {
+                    var sponsorDiv = $("sponsor-bubble");
+                    var cloneNode = $("#clone").clone(true, true);
+                    console.log(cloneNode);
+                    cloneNode.attr("id", "clone-1");
+                    sponsorDiv.append(cloneNode);
+                })
+
+            </script>
         </div>
 
 
