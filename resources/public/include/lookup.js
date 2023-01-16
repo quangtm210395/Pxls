@@ -244,7 +244,7 @@ module.exports.lookup = (function() {
               case 'nuke':
                 return __('Part of a nuke');
               case 'mod':
-                return __('Placed by a staff member using placement overrides');
+                return null;
               default:
                 return null;
             }
