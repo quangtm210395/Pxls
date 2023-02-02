@@ -1773,18 +1773,12 @@ public class WebHandler {
             }
 
             if (identifier != null) {
-                if (id.equalsIgnoreCase("discord")) {
-                    if (!DiscordAuthService.getGuilds(token)) {
-//                        var res = new HashMap<String, Object>();
-//                        res.put("error", "invalid_guild");
-//                        res.put("message", "You must have one of the required roles in the following discord !");
-//                        res.put("servers", DiscordGuild.canonicalGuilds.values());
-//                        respond(exchange, StatusCodes.BAD_REQUEST, res);
+//                if (id.equalsIgnoreCase("discord")) {
+//                    if (!DiscordAuthService.getGuilds(token)) {
+//                        redirect(exchange, "/discord_error.html");
 //                        return;
-                        redirect(exchange, "/discord_error.html");
-                        return;
-                    }
-                }
+//                    }
+//                }
                 User user = App.getUserManager().getByLogin(id, identifier);
                 // If there is no user with that identifier, we make a signup token and tell the client to sign up with that token
                 if (user == null) {
